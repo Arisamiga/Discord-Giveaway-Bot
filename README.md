@@ -1,6 +1,12 @@
 # Discord-Giveaway-Bot
 ### A Simple useful giveaway bot for discord coded in Discord.js
 
+ <a href="https://github.com/Arisamiga/Discord-Giveaway-Bot//issues">
+   <img alt="Issues" src="https://img.shields.io/github/issues/Arisamiga/Discord-Giveaway-Bot?color=0088ff" />
+  </a>
+  
+  
+  
 <img src= "https://i.imgur.com/vEuAoQy.png"> <img src="https://i.imgur.com/VO3D8ew.png">
 
 ## Installation
