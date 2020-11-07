@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "discord.js": "^12.4.1"
+  },
+  "name": "discord.-giveaway-bot",
+  "version": "1.0.0",
+  "description": "A Simple useful giveaway bot for discord coded in Discord.js",
+  "main": "main.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "arisamiga",
+  "license": "Apache-2.0"
+}
