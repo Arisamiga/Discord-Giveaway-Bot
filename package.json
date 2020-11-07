@@ -8,7 +8,7 @@
   "main": "main.js",
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node main.js"
   },
   "author": "arisamiga",
   "license": "Apache-2.0"

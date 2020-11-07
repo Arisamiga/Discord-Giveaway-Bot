@@ -49,7 +49,7 @@ exports.run = async (client, message, args) => {
         if (!msg.reactions.cache.get('🎉').users.cache.size < 1) {
             const winner_embed = new Discord.MessageEmbed()
                 .setTitle(`${prize}`)
-                .setColor('#e92855')
+                .setColor('#f9b428')
                 .setDescription(`Winner:\n${winner}\n\nHosted by: ${message.author}`)
                 .setTimestamp()
                 .setFooter('Ended at')
