@@ -55,3 +55,5 @@ Easy to use!
 </ul>
 
 ### If you are having troubles with the bot i recommend opening a issue.
+
+***Made By Arisamiga***
