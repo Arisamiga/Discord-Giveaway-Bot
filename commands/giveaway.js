@@ -27,33 +27,33 @@ exports.run = async (client, message, args) => {
         if (prize === '') return message.channel.send('You have to enter a price.');
         const embed = new Discord.MessageEmbed()
           .setTitle(`${prize}`)
-          .setColor('36393F')
-          .setDescription(`React with 🎉 to enter!\nTime duration: **${started_time_duration}** ${time_length}\nHosted by: ${message.author}`)
-          .setTimestamp(Date.now() + (started_time_duration *60*60*1000))
+          .setColor('#21b1e3')
+          .setDescription(`React with 🎉 to enter!\nTime duration: **${started_time_duration}** ${time_length}\n\nHosted by: ${message.author}`)
+          .setTimestamp(Date.now() + time_duration)
           .setFooter('Ends at')
         let msg = await client.channels.cache.get(`${channel}`).send(':tada: **GIVEAWAY** :tada:', embed)
           await msg.react('🎉')
             setTimeout(() => {
-                msg.reactions.cache.get('🎉').users.remove(client.user.id)
+              msg.reactions.cache.get('🎉').users.remove(client.user.id)
                 setTimeout(() => {
         let winner = msg.reactions.cache.get('🎉').users.cache.random();
         if (msg.reactions.cache.get('🎉').users.cache.size < 1) {
             const winner_embed = new Discord.MessageEmbed()
                 .setTitle(`${prize}`)
                 .setColor('#e92855')
-                .setDescription(`Winner:\nNo one entered the giveaway.\nHosted by: ${message.author}`)
+                .setDescription(`No one entered the giveaway 🙁\n\nHosted by: ${message.author}`)
                 .setTimestamp()
                 .setFooter('Ended at')
-                msg.edit(':tada: **GIVEAWAY ENDED** :tada:', winner_embed);
+                msg.edit(':tada: **Giveaway Ended** :tada:', winner_embed);
         }
         if (!msg.reactions.cache.get('🎉').users.cache.size < 1) {
             const winner_embed = new Discord.MessageEmbed()
                 .setTitle(`${prize}`)
-                .setColor('#21b1e3')
-                .setDescription(`Winner:\n${winner}\nHosted by: ${message.author}`)
+                .setColor('#e92855')
+                .setDescription(`Winner:\n${winner}\n\nHosted by: ${message.author}`)
                 .setTimestamp()
                 .setFooter('Ended at')
-                msg.edit(':tada: **GIVEAWAY ENDED** :tada:', winner_embed);
+                msg.edit(':tada: **Giveaway Ended** :tada:', winner_embed);
         }
         }, 1000);
         }, time_duration);
