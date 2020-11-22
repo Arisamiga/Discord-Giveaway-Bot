@@ -5,7 +5,7 @@ exports.run = async (client, message, args) => {
     async function giveaway() {
         let time_length = ""
         if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('You don\'t have enough permissions to use this command.');
-        if (!message.content.split(' ')[1]) return message.channel.send('Please follow the format. example : ``g!giveaway 1h 1 Month Discord Nitro``.');
+        if (!message.content.split(' ')[1]) return message.channel.send('Please follow the format. example : ``g!giveaway 1h 773665434612138024 1 Month Discord Nitro``.');
         const prize = message.content.split(' ').slice(3).join(' ');
         let channel = message.content.split(' ')[2]
         const started_time_duration_start = message.content.split(' ')[1]
@@ -22,7 +22,7 @@ exports.run = async (client, message, args) => {
             if (time_duration == 60000){time_length = "minute"}
         }
         if (isNaN(started_time_duration)) return message.channel.send('The duration time has to be a number.');
-        if (started_time_duration < 1) return message.channel.send('The duration time has to be atleast 1.');
+        if (started_time_duration < 1) return message.channel.send('The duration time has to be either a minutes or hours **(m or h)**.');
         if (!message.guild.channels.cache.find(channels => channels.id === `${channel}`)) return message.channel.send("Please enter a valid id of the channel you want the giveaway to be sent.")
         if (prize === '') return message.channel.send('You have to enter a price.');
         const embed = new Discord.MessageEmbed()
