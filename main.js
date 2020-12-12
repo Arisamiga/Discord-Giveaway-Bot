@@ -2,7 +2,6 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const fs = require('fs');
 const token = require('./config.json');
-const config = require("./config.json");
 
 client.on('ready', () => {
     console.log(`Logged in as user: ${client.user.tag}, ID: ${client.user.id}`);
