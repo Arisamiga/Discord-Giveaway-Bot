@@ -5,7 +5,7 @@
    <img alt="Issues" src="https://img.shields.io/github/issues/Arisamiga/Discord-Giveaway-Bot?color=0088ff" />
   </a>
   
-  
+  [![CodeFactor](https://www.codefactor.io/repository/github/arisamiga/discord-giveaway-bot/badge)](https://www.codefactor.io/repository/github/arisamiga/discord-giveaway-bot)
   
 <img src= "https://i.imgur.com/vEuAoQy.png"> <img src="https://i.imgur.com/VO3D8ew.png">
 
