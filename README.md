@@ -7,7 +7,7 @@
   
   [![CodeFactor](https://www.codefactor.io/repository/github/arisamiga/discord-giveaway-bot/badge)](https://www.codefactor.io/repository/github/arisamiga/discord-giveaway-bot)
   
-<img src= "https://i.imgur.com/vEuAoQy.png"> <img src="https://i.imgur.com/VO3D8ew.png">
+<img src= "https://i.imgur.com/aeztCsc.png"> <img src="https://i.imgur.com/CHkVkT7.png">
 
 ## Installation
 ```
